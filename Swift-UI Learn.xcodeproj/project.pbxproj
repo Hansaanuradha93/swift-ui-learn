@@ -11,6 +11,7 @@
 		47AE5FF82832A8E70056DE92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE5FF72832A8E70056DE92 /* ContentView.swift */; };
 		47AE5FFA2832A8EC0056DE92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AE5FF92832A8EC0056DE92 /* Assets.xcassets */; };
 		47AE5FFD2832A8EC0056DE92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AE5FFC2832A8EC0056DE92 /* Preview Assets.xcassets */; };
+		47CBF9CB2835650900652224 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CBF9CA2835650900652224 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		47AE5FF72832A8E70056DE92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47AE5FF92832A8EC0056DE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47AE5FFC2832A8EC0056DE92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47CBF9CA2835650900652224 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				47AE5FF52832A8E70056DE92 /* Swift_UI_LearnApp.swift */,
 				47AE5FF72832A8E70056DE92 /* ContentView.swift */,
+				47CBF9CA2835650900652224 /* HeaderView.swift */,
 				47AE5FF92832A8EC0056DE92 /* Assets.xcassets */,
 				47AE5FFB2832A8EC0056DE92 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47AE5FF82832A8E70056DE92 /* ContentView.swift in Sources */,
+				47CBF9CB2835650900652224 /* HeaderView.swift in Sources */,
 				47AE5FF62832A8E70056DE92 /* Swift_UI_LearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
