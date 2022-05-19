@@ -8,10 +8,22 @@ struct ContentView: View {
                        subtitle: "Subtitle",
                        description: "Short description of what I'm demonstrating here",
                        background: .purple, textColor: .white)
-            Image(systemName: "hand.thumbsup.fill")
-                .font(.largeTitle)
-                .opacity(0.7)
-                .overlay(Text("Hi"))
+            
+            Text("This text has a rounded rectangle behind it")
+                .foregroundColor(.white)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 20)
+                    .foregroundColor(.blue))
+                .padding()
+            
+            Text("But sometimes I'll use color and a corner radius:")
+            
+            Text("This text has a color with a corner radius")
+                .foregroundColor(.white)
+                .padding()
+                .background(.blue)
+                .cornerRadius(20)
         }
         .font(.title)
         
