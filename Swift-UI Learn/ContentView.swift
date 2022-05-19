@@ -5,8 +5,8 @@ struct ContentView: View {
         
         VStack(spacing: 20) {
             HeaderView(title: "Previews",
-                       subtitle: "Size Category (Accessibility Text Size)",
-                       description: "For testing accessibility text size, set the sizeCategory property.",
+                       subtitle: "PreviewInterfaceOrientation",
+                       description: "Use previewInfterfaceOrientation to change your preview to landscape mode (right or left)",
                        background: .red, textColor: .white)
             
             
@@ -22,7 +22,7 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             ContentView()
                 .preferredColorScheme(.dark)
-                .environment(\.sizeCategory, .accessibilityLarge)
+                .previewInterfaceOrientation(.landscapeLeft)
         }
     }
 }
