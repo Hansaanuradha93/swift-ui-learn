@@ -5,8 +5,8 @@ struct ContentView: View {
         
         VStack(spacing: 20) {
             HeaderView(title: "Previews",
-                       subtitle: "Light & Dark Modes Together",
-                       description: "Group your views to preview more than one at a time",
+                       subtitle: "Change Devices",
+                       description: "By default, your canvas will use the simulator you currently have selected (upper left in Xcode). You can preview a different device using the previewDevice modefier",
                        background: .red, textColor: .white)
             
             
@@ -21,6 +21,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
+                .previewDevice("iPad Pro (9.7-inch)")
             ContentView()
                 .preferredColorScheme(.dark)
         }
