@@ -19,6 +19,7 @@ struct HeaderView: View {
         
         VStack(spacing: 20) {
             Text(title)
+                .font(.largeTitle)
             
             Text(subtitle)
                 .foregroundColor(.gray)

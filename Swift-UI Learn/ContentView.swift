@@ -8,6 +8,10 @@ struct ContentView: View {
                        subtitle: "Subtitle",
                        description: "Short description of what I'm demonstrating here",
                        background: .purple, textColor: .white)
+            Image(systemName: "hand.thumbsup.fill")
+                .font(.largeTitle)
+                .opacity(0.7)
+                .overlay(Text("Hi"))
         }
         .font(.title)
         
