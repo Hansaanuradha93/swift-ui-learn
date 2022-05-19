@@ -4,26 +4,27 @@ struct ContentView: View {
     var body: some View {
         
         VStack(spacing: 20) {
-            HeaderView(title: "Title",
-                       subtitle: "Subtitle",
-                       description: "Short description of what I'm demonstrating here",
+            HeaderView(title: "Layout Behavior",
+                       subtitle: "Views that Pull In",
+                       description: "Some views minimize their frame size so it is only as big as the content within it",
                        background: .purple, textColor: .white)
             
-            Text("This text has a rounded rectangle behind it")
+            Image(systemName: "arrow.down.to.line.alt")
+            
+            HStack {
+                Image(systemName: "arrow.right.to.line.alt")
+                Text("Text views pull in")
+                Image(systemName: "arrow.left.to.line.alt")
+            }
+            
+            Image(systemName: "arrow.up.to.line.alt")
+            
+            Text("Pull-In views tend to center themselves within their parent container view")
+                .frame(maxWidth: .infinity)
                 .foregroundColor(.white)
                 .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(.blue))
-                .padding()
-            
-            Text("But sometimes I'll use color and a corner radius:")
-            
-            Text("This text has a color with a corner radius")
-                .foregroundColor(.white)
-                .padding()
-                .background(.blue)
-                .cornerRadius(20)
+                .background(.purple)
+
         }
         .font(.title)
         
