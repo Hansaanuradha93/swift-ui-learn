@@ -17,7 +17,7 @@ struct HeaderView: View {
 
     var body: some View {
         
-        VStack(spacing: 80) {
+        VStack(spacing: 20) {
             Text(title)
                 .font(.largeTitle)
             
@@ -29,12 +29,6 @@ struct HeaderView: View {
                 .foregroundColor(textColor)
                 .padding()
                 .background(background)
-            
-            Image(systemName: "arrow.up.and.down.circle.fill")
-                .font(.largeTitle)
-            
-            Text("The spacing here between all of these views is 80")
-                .font(.title)
         }
     }
 }

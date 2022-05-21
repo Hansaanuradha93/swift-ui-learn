@@ -5,28 +5,32 @@ struct ContentView: View {
         
         VStack(spacing: 20) {
             HeaderView(title: "VStacks",
-                       subtitle: "Nesting",
-                       description: "A VStack can be nested within another VStack when laying out views",
+                       subtitle: "Alignment",
+                       description: "By default views in a VStack are center aligned",
                        background: .blue, textColor: .white)
             
-            VStack {
-                Text("VStack inside another VStack")
-                
-                Divider()
-                
-                Text("This can be helpful, Why?")
-
-                Divider()
-                
-                Text("More than 10 views creates an error")
-                
+            VStack(alignment: .leading, spacing: 40) {
+                Text("Leading Alignment")
+                    .font(.largeTitle)
+                Divider() // Push-out view
+                Image(systemName: "arrow.left")
             }
             .padding()
             .foregroundColor(.white)
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(.blue)
-            )
+            .background(RoundedRectangle(cornerRadius: 20))
+            .foregroundColor(.blue)
+            .padding()
+            
+            VStack(alignment: .trailing, spacing: 40) {
+                Text("Leading Alignment")
+                    .font(.largeTitle)
+                Divider() // Push-out view
+                Image(systemName: "arrow.right")
+            }
+            .padding()
+            .foregroundColor(.white)
+            .background(RoundedRectangle(cornerRadius: 20))
+            .foregroundColor(.purple)
             .padding()
             
 
