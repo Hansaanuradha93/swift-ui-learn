@@ -33,6 +33,17 @@ struct ContentView: View {
             .foregroundColor(.purple)
             .padding()
             
+            VStack(spacing: 40) {
+                Text("Center Alignment")
+                    .font(.largeTitle)
+                Divider()
+                Image(systemName: "arrow.up")
+            }
+            .padding()
+            .foregroundColor(.white)
+            .background(RoundedRectangle(cornerRadius: 20))
+            .foregroundColor(.red)
+            .padding()
 
 
         }
