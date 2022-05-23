@@ -4,35 +4,17 @@ struct ContentView: View {
     var body: some View {
         
         VStack(spacing: 20) {
-            HeaderView(title: "VStacks",
-                       subtitle: "Alignment",
-                       description: "By default views in a VStack are center aligned",
-                       background: .blue, textColor: .white)
+            HeaderView(title: "HStacks",
+                       subtitle: "Introduction",
+                       description: "HStack will horizontally arrange other views within it",
+                       background: .orange, textColor: .white)
             
-            VStack(alignment: .leading, spacing: 40) {
-                Text("Leading Alignment")
-                    .font(.largeTitle)
-                Divider() // Push-out view
-                Image(systemName: "arrow.left")
-            }
-            .padding()
-            .foregroundColor(.white)
-            .background(RoundedRectangle(cornerRadius: 20))
-            .foregroundColor(.blue)
-            .padding()
-            
-            VStack(alignment: .trailing, spacing: 40) {
-                Text("Leading Alignment")
-                    .font(.largeTitle)
-                Divider() // Push-out view
-                Image(systemName: "arrow.right")
-            }
-            .padding()
-            .foregroundColor(.white)
-            .background(RoundedRectangle(cornerRadius: 20))
-            .foregroundColor(.purple)
-            .padding()
 
+            HStack {
+                Text("View 1")
+                Text("View 2")
+                Text("View 3")
+            }
 
         }
         .font(.title)
