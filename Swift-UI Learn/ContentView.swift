@@ -3,17 +3,27 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack(spacing: 20) {
+        VStack(spacing: 40) {
             HeaderView(title: "HStacks",
                        subtitle: "Introduction",
                        description: "HStack will horizontally arrange other views within it",
                        background: .orange, textColor: .white)
             
 
-            HStack {
-                Text("View 1")
-                Text("View 2")
-                Text("View 3")
+            Text("Default Spacing")
+                .font(.largeTitle)
+            
+            HStack() {
+                Image(systemName: "1.circle")
+                Image(systemName: "2.circle")
+                Image(systemName: "3.circle")
+            }
+            .font(.largeTitle)
+            
+            HStack(spacing: 100) {
+                Image(systemName: "1.circle")
+                Image(systemName: "2.circle")
+                Image(systemName: "3.circle")
             }
 
         }
