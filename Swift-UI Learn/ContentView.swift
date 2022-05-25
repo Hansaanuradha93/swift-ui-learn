@@ -25,6 +25,12 @@ struct ContentView: View {
                 Image(systemName: "2.circle")
                 Image(systemName: "3.circle")
             }
+            
+            HStack(spacing: 40) {
+                Image(systemName: "1.circle")
+                Image(systemName: "2.circle")
+                Image(systemName: "3.circle")
+            }
 
         }
         .font(.title)
