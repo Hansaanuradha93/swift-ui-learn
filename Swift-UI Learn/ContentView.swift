@@ -5,35 +5,52 @@ struct ContentView: View {
         
         VStack(spacing: 40) {
             HeaderView(title: "HStacks",
-                       subtitle: "Introduction",
-                       description: "HStack will horizontally arrange other views within it",
+                       subtitle: "Alignment",
+                       description: "By default, views within an HStack are vertically aligned in the center",
                        background: .orange, textColor: .white)
             
+            HStack {
+                Rectangle()
+                    .foregroundColor(.orange)
+                    .frame(width: 25)
+                Text("Leading")
+                Spacer()
+                Text("Center")
+                Spacer()
+                Text("Trailing")
+                    .padding()
+            }
+            .border(.orange)
+            
+            HStack(alignment: .top) {
+                Rectangle()
+                    .foregroundColor(.orange)
+                    .frame(width: 25)
+                Text("Leading")
+                Spacer()
+                Text("Center")
+                Spacer()
+                Text("Trailing")
+                    .padding(.trailing)
+            }
+            .border(.orange)
+            
+            HStack(alignment: .bottom) {
+                Rectangle()
+                    .foregroundColor(.orange)
+                    .frame(width: 25)
+                Text("Leading")
+                Spacer()
+                Text("Center")
+                Spacer()
+                Text("Trailing")
+                    .padding(.trailing)
+            }
+            .border(.orange)
 
-            Text("Default Spacing")
-                .font(.largeTitle)
             
-            HStack() {
-                Image(systemName: "1.circle")
-                Image(systemName: "2.circle")
-                Image(systemName: "3.circle")
-            }
-            .font(.largeTitle)
-            
-            HStack(spacing: 100) {
-                Image(systemName: "1.circle")
-                Image(systemName: "2.circle")
-                Image(systemName: "3.circle")
-            }
-            
-            HStack(spacing: 40) {
-                Image(systemName: "1.circle")
-                Image(systemName: "2.circle")
-                Image(systemName: "3.circle")
-            }
 
         }
-        .font(.title)
         
     }
 }
