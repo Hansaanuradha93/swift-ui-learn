@@ -5,48 +5,25 @@ struct ContentView: View {
         
         VStack(spacing: 40) {
             HeaderView(title: "HStacks",
-                       subtitle: "Alignment",
-                       description: "By default, views within an HStack are vertically aligned in the center",
-                       background: .orange, textColor: .white)
-            
-            HStack {
-                Rectangle()
-                    .foregroundColor(.orange)
-                    .frame(width: 25)
-                Text("Leading")
-                Spacer()
-                Text("Center")
-                Spacer()
-                Text("Trailing")
-                    .padding()
-            }
-            .border(.orange)
-            
-            HStack(alignment: .top) {
-                Rectangle()
-                    .foregroundColor(.orange)
-                    .frame(width: 25)
-                Text("Leading")
-                Spacer()
-                Text("Center")
-                Spacer()
-                Text("Trailing")
-                    .padding(.trailing)
-            }
-            .border(.orange)
+                       subtitle: "Text Alignment",
+                       description: "HStacks have another alignment option to help better align the bottom of the text",
+                       background: .orange, textColor: .black)
             
             HStack(alignment: .bottom) {
-                Rectangle()
-                    .foregroundColor(.orange)
-                    .frame(width: 25)
-                Text("Leading")
-                Spacer()
-                Text("Center")
-                Spacer()
-                Text("Trailing")
-                    .padding(.trailing)
+                Text("Hello")
+                Text("amazing")
+                    .font(.largeTitle)
+                Text("developer")
             }
-            .border(.orange)
+            .font(.body)
+            
+            HStack(alignment: .firstTextBaseline) {
+                Text("Hello")
+                Text("amazing")
+                    .font(.largeTitle)
+                Text("developer")
+            }
+            .font(.body)
 
             
 

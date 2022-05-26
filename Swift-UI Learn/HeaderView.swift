@@ -30,6 +30,7 @@ struct HeaderView: View {
                 .padding()
                 .background(background)
         }
+        .font(.title)
     }
 }
 
