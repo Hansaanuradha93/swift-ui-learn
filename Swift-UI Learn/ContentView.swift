@@ -5,25 +5,23 @@ struct ContentView: View {
         
         VStack(spacing: 40) {
             HeaderView(title: "HStacks",
-                       subtitle: "Text Alignment",
-                       description: "HStacks have another alignment option to help better align the bottom of the text",
+                       subtitle: "First & Last Text Alignment",
+                       description: "The firstTestBaseLine will align the bottom fo the text on the first lines (\"Amazing\" and \"Really\")",
                        background: .orange, textColor: .black)
             
-            HStack(alignment: .bottom) {
-                Text("Hello")
-                Text("amazing")
-                    .font(.largeTitle)
-                Text("developer")
-            }
-            .font(.body)
-            
             HStack(alignment: .firstTextBaseline) {
-                Text("Hello")
-                Text("amazing")
-                    .font(.largeTitle)
-                Text("developer")
+                Text("Amazing developer")
+                    .font(.title3)
+                Text("Really amazing developer")
             }
-            .font(.body)
+            .frame(width: 250)
+            
+            HStack(alignment: .lastTextBaseline) {
+                Text("Amazing developer")
+                    .font(.title3)
+                Text("Really amazing developer")
+            }
+            .frame(width: 250)
 
             
 
