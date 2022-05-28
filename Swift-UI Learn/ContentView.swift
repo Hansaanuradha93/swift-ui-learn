@@ -9,21 +9,6 @@ struct ContentView: View {
                        description: "The firstTestBaseLine will align the bottom fo the text on the first lines (\"Amazing\" and \"Really\")",
                        background: .orange, textColor: .black)
             
-            HStack(alignment: .firstTextBaseline) {
-                Text("Amazing developer")
-                    .font(.title3)
-                Text("Really amazing developer")
-            }
-            .frame(width: 250)
-            
-            HStack(alignment: .lastTextBaseline) {
-                Text("Amazing developer")
-                    .font(.title3)
-                Text("Really amazing developer")
-            }
-            .frame(width: 250)
-
-            
 
         }
         
