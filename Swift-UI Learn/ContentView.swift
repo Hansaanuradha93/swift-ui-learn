@@ -8,9 +8,6 @@ struct ContentView: View {
                        subtitle: "",
                        description: "",
                        background: .orange, textColor: .black)
-            
-            
-
         }
         
     }
