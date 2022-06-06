@@ -8,12 +8,6 @@ struct ContentView: View {
                        subtitle: "Excersice",
                        description: "Test",
                        background: .orange, textColor: .black)
-            
-            HStack (spacing: 20) {
-                Text("Test 1")
-                Text("Test 2")
-                Text("Test 3")
-            }
         }
         
     }
