@@ -8,6 +8,12 @@ struct ContentView: View {
                        subtitle: "Excersice",
                        description: "Test",
                        background: .orange, textColor: .black)
+            
+            HStack {
+                Text("I am")
+                Text("Learning")
+                Text("Swift UI")
+            }
         }
         
     }
