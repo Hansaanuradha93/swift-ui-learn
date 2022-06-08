@@ -9,11 +9,6 @@ struct ContentView: View {
                        description: "Test",
                        background: .orange, textColor: .black)
             
-            HStack {
-                Text("I am")
-                Text("Learning")
-                Text("Swift UI")
-            }
         }
         
     }
