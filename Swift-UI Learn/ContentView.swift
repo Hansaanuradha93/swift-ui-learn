@@ -9,6 +9,10 @@ struct ContentView: View {
                        description: "Test",
                        background: .orange, textColor: .black)
             
+            HStack (spacing: 20) {
+                Text("Jack")
+                Text("Downson")
+            }
         }
         
     }
