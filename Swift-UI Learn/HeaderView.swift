@@ -1,10 +1,3 @@
-//
-//  HeaderView.swift
-//  Swift-UI Learn
-//
-//  Created by Hansa Anuradha on 2022-05-18.
-//
-
 import SwiftUI
 
 struct HeaderView: View {
