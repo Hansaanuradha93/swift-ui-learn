@@ -8,6 +8,12 @@ struct ContentView: View {
                        subtitle: "Excersice",
                        description: "Test",
                        background: .orange, textColor: .black)
+            
+            VStack {
+                Text("test 1")
+                Text("test 2")
+                Text("test 3")
+            }
         }
         
     }
