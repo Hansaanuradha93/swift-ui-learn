@@ -9,12 +9,7 @@ struct ContentView: View {
                        description: "Test",
                        background: .orange, textColor: .black)
             
-            ZStack {
-                VStack {
-                    Text("I am hansa")
-                    Text("From Sri Lanka")
-                }
-            }
+            
         }
          
     }
