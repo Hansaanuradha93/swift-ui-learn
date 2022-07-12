@@ -9,6 +9,10 @@ struct ContentView: View {
                        description: "Test",
                        background: .orange, textColor: .black)
             
+            VStack {
+                Text("Hansa")
+                Text("Anuradha")
+            }
         }
          
     }
