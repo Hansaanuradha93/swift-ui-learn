@@ -5,38 +5,33 @@ struct ContentView: View {
         
         VStack(spacing: 40) {
             HeaderView(title: "HStack",
-                       subtitle: "Customizing",
-                       description: "HStacks are views that can have modifiers applied to them just like any other view",
+                       subtitle: "Layout Priority",
+                       description: "Use the layoutPriority modifier to give priority to the space a view needs to show its content",
                        background: .orange, textColor: .black)
             
             HStack {
-                Text("Leading")
-                Text("Middle")
-                Text("Trailing")
+                Text("SwiftUI")
+                    .font(.largeTitle)
+                    .lineLimit(1)
+                Image("SwiftUI")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                Text("Brings Balance")
+                    .font(.largeTitle)
+                    .layoutPriority(1)
             }
-            .padding()
-            .border(Color.orange)
             
-            HStack (spacing: 10) {
-                Image(systemName: "1.circle")
-                Image(systemName: "2.circle")
-                Image(systemName: "3.circle")
+            HStack {
+                Text("SwiftUI")
+                    .font(.largeTitle)
+                    .layoutPriority(1)
+                Image("SwiftUI")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                Text("Brings Balance")
+                    .font(.largeTitle)
+                    .lineLimit(1)
             }
-            .padding()
-            
-            HStack (spacing: 20) {
-                Image(systemName: "a.circle.fill")
-                Image(systemName: "b.circle.fill")
-                Image(systemName: "c.circle.fill")
-                Image(systemName: "d.circle.fill")
-                Image(systemName: "e.circle.fill")
-            }
-            .font(.largeTitle)
-            .padding()
-            .background(Color.orange)
-            .cornerRadius(10)
-            
-            
             
         }
          
