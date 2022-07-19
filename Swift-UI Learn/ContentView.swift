@@ -9,8 +9,6 @@ struct ContentView: View {
                        description: "Use the layoutPriority modifier to give priority to the space a view needs to show its content",
                        background: .orange, textColor: .black)
             
-            
-            
         }
          
     }
