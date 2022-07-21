@@ -3,13 +3,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack(spacing: 40) {
-            HeaderView(title: "HStack",
-                       subtitle: "Layout Priority",
-                       description: "Use the layoutPriority modifier to give priority to the space a view needs to show its content",
-                       background: .orange, textColor: .black)
+        ZStack {
             
+            Color.gray
+            
+            VStack(spacing: 40) {
+                HeaderView(title: "ZStack",
+                           subtitle: "Introduction",
+                           description: "ZStacks are great for setting a background color",
+                           background: .green, textColor: .black)
+                
+                Text("But notice the color stops at the Safe Areas")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.green)
+                
+                
+            }
         }
+        
          
     }
 }
