@@ -9,18 +9,16 @@ struct ContentView: View {
             
             VStack(spacing: 40) {
                 HeaderView(title: "ZStack",
-                           subtitle: "Introduction",
-                           description: "ZStacks are great for setting a background color",
+                           subtitle: "Ignores Safe Area Edges",
+                           description: "Ignoring the Safe Areas edges will extend a view to fill the wholse scene",
                            background: .green, textColor: .black)
                 
-                Text("But notice the color stops at the Safe Areas")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.green)
+                
                 
                 
             }
         }
+        .ignoresSafeArea(.all)
         
          
     }
