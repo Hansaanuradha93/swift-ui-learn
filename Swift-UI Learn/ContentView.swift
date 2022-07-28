@@ -13,10 +13,12 @@ struct ContentView: View {
                            description: "Ignoring the Safe Areas edges will extend a view to fill the wholse scene",
                            background: .green, textColor: .black)
                 
+                Spacer()
+                
                                 
             }
         }
-        .ignoresSafeArea(.all)
+        .ignoresSafeArea()
         
          
     }
